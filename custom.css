@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    background-color: rgb(148, 166, 160);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Limit maximum width for larger screens */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(205, 203, 203);
+    background-color: rgb(25, 33, 33);
+    color: white;
+    border-radius: 5px;
+    text-align: center; /* Center align content within the container */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+#pass-box {
+    width: 100%;
+    font-size: 24px; /* Adjust font size for smaller screens */
+    padding: 15px; /* Increased padding for better spacing */
+    margin: 10px auto; /* Center align the box horizontally */
+    border-radius: 4px;
+    background-color: #fff; /* White background for better contrast */
+    color: #000; /* Black text color for better readability */
+    text-align: center; /* Center text for better alignment */
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    margin-top: 10px;
+    justify-content: space-between;
+    font-size: 18px; /* Adjust font size for smaller screens */
+}
+
+.label {
+    user-select: none;
+}
+
+#btn {
+    width: 100%;
+    font-size: 20px;
+    background-color: antiquewhite;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #pass-box {
+        font-size: 20px;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .row {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #pass-box {
+        font-size: 18px;
+    }
+
+    .row {
+        font-size: 14px;
+    }
+}
